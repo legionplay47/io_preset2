@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2 | Netflix Operations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="block-page block-two-page">
+    <div id="loader">
+        <h1>NETFLIX <span>OPERATIONS</span></h1>
+        <div class="loader-bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='home.html'">NETFLIX <span>OPERATIONS</span></div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="bloque1.html">Bloques</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a class="logout-link" href="index.html">Cerrar sesión</a></li>
+        </ul>
+
+        <div class="episode-selector">
+            <button class="selector-btn" id="selectorBtn">BLOQUE 2 / 5 <span>▾</span></button>
+            <div class="selector-menu" id="selectorMenu">
+                <a href="bloque1.html">Bloque 1 - Disciplinas de la IO</a>
+                <a href="bloque2.html">Bloque 2 - Simulación, juegos, redes y transporte</a>
+                <a href="bloque3.html">Bloque 3 - Proceso de decisión y programación dinámica</a>
+                <a href="bloque4.html">Bloque 4 - Aplicaciones de la IO</a>
+                <a href="bloque5.html">Bloque 5 - Caso de estudio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero block-hero hero-b2">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="tag">BLOQUE 2 / 5</p>
+            <h1>Simulación, teoría de juegos, redes y transporte</h1>
+            <p class="description">
+                Herramientas para representar escenarios, analizar estrategias y encontrar rutas o
+                distribuciónes más eficientes.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary reveal-content-btn" href="#contenido">Ver contenido</a>
+                <a class="btn secondary" href="bloque3.html">Siguiente bloque</a>
+            </div>
+        </div>
+
+        <div class="block-visual-stack" aria-hidden="true">
+            <div class="visual-graphic network-graphic block-visual-primary"></div>
+            <div class="visual-graphic route-graphic block-visual-secondary"></div>
+        </div>
+    </header>
+
+    <main class="content" id="contenido">
+        <section class="intro-panel block-intro-copy">
+            <h2>Escenarios, estrategias y flujo</h2>
+            <p>
+                Estos métodos ayudan a estudiar sistemas antes de tomar decisiones reales, especialmente
+                cuando intervienen incertidumbre, competencia, conexiones o costos de traslado.
+            </p>
+        </section>
+
+        <section class="cards-row cards-layout-three-two">
+            <article class="info-card">
+                <h3>Simulación</h3>
+                <p>Prueba escenarios sin afectar la operación real.</p>
+                <ul>
+                    <li>Analizar sistemas</li>
+                    <li>Evaluar alternativas</li>
+                    <li>Predecir resultados</li>
+                    <li>Reducir riesgos</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Tipos de simulación</h3>
+                <p>Adaptan el análisis al tipo de sistema.</p>
+                <ul>
+                    <li>Determinística</li>
+                    <li>Probabilística</li>
+                    <li>Discreta</li>
+                    <li>Continua</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Teoría de juegos</h3>
+                <p>Analiza estrategias entre varios participantes.</p>
+                <ul>
+                    <li>Jugadores</li>
+                    <li>Estrategias</li>
+                    <li>Pagos</li>
+                    <li>Equilibrio de Nash</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Redes</h3>
+                <p>Organiza nodos, conexiones y flujos.</p>
+                <ul>
+                    <li>Ruta más corta</li>
+                    <li>Flujo máximo</li>
+                    <li>Árbol mínimo</li>
+                    <li>Asignacion</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Transporte</h3>
+                <p>Distribuye productos con menor costo.</p>
+                <ul>
+                    <li>Origenes</li>
+                    <li>Destinos</li>
+                    <li>Costos</li>
+                    <li>Distribucion óptima</li>
+                </ul>
+            </article>
+        </section>
+
+        <nav class="block-next-nav" aria-label="Navegación al siguiente bloque">
+            <a href="bloque3.html" aria-label="Ir al bloque 3" title="Siguiente bloque">››</a>
+        </nav>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

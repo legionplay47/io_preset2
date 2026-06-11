@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 5 | Netflix Operations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="block-page block-five-page">
+    <div id="loader">
+        <h1>NETFLIX <span>OPERATIONS</span></h1>
+        <div class="loader-bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='home.html'">NETFLIX <span>OPERATIONS</span></div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="bloque1.html">Bloques</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a class="logout-link" href="index.html">Cerrar sesión</a></li>
+        </ul>
+
+        <div class="episode-selector">
+            <button class="selector-btn" id="selectorBtn">BLOQUE 5 / 5 <span>▾</span></button>
+            <div class="selector-menu" id="selectorMenu">
+                <a href="bloque1.html">Bloque 1 - Disciplinas de la IO</a>
+                <a href="bloque2.html">Bloque 2 - Simulación, juegos, redes y transporte</a>
+                <a href="bloque3.html">Bloque 3 - Proceso de decisión y programación dinámica</a>
+                <a href="bloque4.html">Bloque 4 - Aplicaciones de la IO</a>
+                <a href="bloque5.html">Bloque 5 - Caso de estudio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero block-hero compact-block-hero hero-b5">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="tag">BLOQUE 5 / 5</p>
+            <h1>Caso de estudio</h1>
+            <p class="description">
+                Aplicación de programación lineal entera para maximizar los ingresos diarios de una microempresa alimentaria.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary reveal-content-btn" href="#contenido">Ver contenido</a>
+                <a class="btn secondary" href="home.html">Volver al inicio</a>
+                <a class="btn secondary" href="equipo.html">Ver equipo</a>
+            </div>
+        </div>
+
+        <div class="block-visual-stack" aria-hidden="true">
+            <div class="visual-graphic production-graphic block-visual-primary"></div>
+            <div class="visual-graphic result-graphic block-visual-secondary"></div>
+        </div>
+    </header>
+    <main class="content" id="contenido">
+        <section class="intro-panel block-intro-copy">
+            <h2>Un problema real convertido en modelo</h2>
+            <p>
+                El caso analiza una microempresa de bocadillos ubicada en el sureste de Goiás, Brasil.
+                La gerencia necesitaba decidir cuántos productos elaborar cada día para maximizar sus
+                ingresos sin superar la materia prima, la demanda y el tiempo de trabajo disponible.
+            </p>
+        </section>
+
+        <section class="cards-row cards-layout-three-two">
+            <article class="info-card">
+                <h3>Contexto</h3>
+                <p>Seis productos con precio uniforme.</p>
+                <ul>
+                    <li>Coxinhas</li>
+                    <li>Rollos de salchicha</li>
+                    <li>Empanadas de carne</li>
+                    <li>Kebabs de carne y queso</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Variables de decisión</h3>
+                <p>Cantidad diaria a producir por producto.</p>
+                <ul>
+                    <li>x1: coxinhas</li>
+                    <li>x2: rollos</li>
+                    <li>x3: empanadas</li>
+                    <li>x4, x5, x6: otros productos</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Restricciones</h3>
+                <p>Límites reales de recursos y capacidad.</p>
+                <ul>
+                    <li>Materia prima disponible</li>
+                    <li>Mínimos y máximos de demanda</li>
+                    <li>16.200 segúndos de trabajo</li>
+                    <li>Productos en unidades enteras</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Modelo matemático</h3>
+                <p>Busca maximizar el ingreso total.</p>
+                <ul>
+                    <li>Max Z = 2.5x1 + ... + 2.5x6</li>
+                    <li>23 restricciones lineales</li>
+                    <li>Programación lineal entera</li>
+                    <li>Método Simplex como base teorica</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Resolución</h3>
+                <p>Solución obtenida con herramientas computacionales.</p>
+                <ul>
+                    <li>Lenguaje Julia</li>
+                    <li>Paquete JuMP</li>
+                    <li>Optimizador Cbc</li>
+                    <li>Solucion factible y óptima</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="results-box">
+            <h2>Producción óptima obtenida</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Producto</th><th>Cantidad</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Coxinhas</td><td>90</td></tr>
+                        <tr><td>Rollos de salchicha</td><td>40</td></tr>
+                        <tr><td>Empanadas de carne</td><td>180</td></tr>
+                        <tr><td>Masas de jamon y queso</td><td>60</td></tr>
+                        <tr><td>Kebabs de carne</td><td>153</td></tr>
+                        <tr><td>Kebabs de queso</td><td>120</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="big-result">Ingreso máximo: R$ 1.607,50 diarios</h3>
+        </section>
+
+        <nav class="block-next-nav" aria-label="Navegación a la página del equipo">
+            <a href="equipo.html" aria-label="Ir a la página del equipo" title="Ver equipo">››</a>
+        </nav>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

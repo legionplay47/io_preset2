@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 3 | Netflix Operations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="block-page block-three-page">
+    <div id="loader">
+        <h1>NETFLIX <span>OPERATIONS</span></h1>
+        <div class="loader-bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='home.html'">NETFLIX <span>OPERATIONS</span></div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="bloque1.html">Bloques</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a class="logout-link" href="index.html">Cerrar sesión</a></li>
+        </ul>
+
+        <div class="episode-selector">
+            <button class="selector-btn" id="selectorBtn">BLOQUE 3 / 5 <span>▾</span></button>
+            <div class="selector-menu" id="selectorMenu">
+                <a href="bloque1.html">Bloque 1 - Disciplinas de la IO</a>
+                <a href="bloque2.html">Bloque 2 - Simulación, juegos, redes y transporte</a>
+                <a href="bloque3.html">Bloque 3 - Proceso de decisión y programación dinámica</a>
+                <a href="bloque4.html">Bloque 4 - Aplicaciones de la IO</a>
+                <a href="bloque5.html">Bloque 5 - Caso de estudio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero block-hero hero-b3">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="tag">BLOQUE 3 / 5</p>
+            <h1>Proceso de decisión y programación dinámica</h1>
+            <p class="description">
+                Técnicas para analizar alternativas, reducir la incertidumbre y tomar decisiones por etapas.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary reveal-content-btn" href="#contenido">Ver contenido</a>
+                <a class="btn secondary" href="bloque4.html">Siguiente bloque</a>
+            </div>
+        </div>
+
+        <div class="block-visual-stack" aria-hidden="true">
+            <div class="visual-graphic decision-graphic block-visual-primary"></div>
+            <div class="visual-graphic stages-graphic block-visual-secondary"></div>
+        </div>
+    </header>
+
+    <main class="content" id="contenido">
+        <section class="intro-panel block-intro-copy">
+            <h2>Decidir con método</h2>
+            <p>
+                Una decisión puede generar mejores resultados cuando se analiza con información,
+                criterios y alternativas claras. Cuando el problema se divide en etapas, la programación
+                dinámica ayuda a construir soluciones paso a paso.
+            </p>
+        </section>
+
+        <section class="cards-row">
+            <article class="info-card">
+                <h3>Proceso de decisión</h3>
+                <p>Ordena el problema y sus alternativas.</p>
+                <ul>
+                    <li>Problema</li>
+                    <li>Información</li>
+                    <li>Alternativas</li>
+                    <li>Evaluacion</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Etapas del proceso</h3>
+                <p>Guían la decisión desde el diagnóstico.</p>
+                <ul>
+                    <li>Seleccion</li>
+                    <li>Implementacion</li>
+                    <li>Control</li>
+                    <li>Seguimiento</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Programación dinámica</h3>
+                <p>Divide problemas complejos en etapas.</p>
+                <ul>
+                    <li>Decisiones secuenciales</li>
+                    <li>Subproblemas</li>
+                    <li>Optimización</li>
+                    <li>Menos cálculos repetitivos</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Principio de Bellman</h3>
+                <p>Construye soluciones óptimas por etapas.</p>
+                <ul>
+                    <li>Estado</li>
+                    <li>Etapa</li>
+                    <li>Decisión</li>
+                    <li>Función objetivo</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="timeline-box">
+            <h2>Flujo de decisión</h2>
+            <div class="timeline">
+                <span>Identificar problema</span>
+                <span>Reunir información</span>
+                <span>Plantear alternativas</span>
+                <span>Evaluar resultados</span>
+                <span>Seleccionar opcion</span>
+                <span>Implementar decisión</span>
+                <span>Controlar resultados</span>
+            </div>
+        </section>
+
+        <nav class="block-next-nav" aria-label="Navegación al siguiente bloque">
+            <a href="bloque4.html" aria-label="Ir al bloque 4" title="Siguiente bloque">››</a>
+        </nav>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

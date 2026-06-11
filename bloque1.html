@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 1 | Netflix Operations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="block-page block-one-page">
+    <div id="loader">
+        <h1>NETFLIX <span>OPERATIONS</span></h1>
+        <div class="loader-bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='home.html'">NETFLIX <span>OPERATIONS</span></div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="bloque1.html">Bloques</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a class="logout-link" href="index.html">Cerrar sesión</a></li>
+        </ul>
+
+        <div class="episode-selector">
+            <button class="selector-btn" id="selectorBtn">BLOQUE 1 / 5 <span>▾</span></button>
+            <div class="selector-menu" id="selectorMenu">
+                <a href="bloque1.html">Bloque 1 - Disciplinas de la IO</a>
+                <a href="bloque2.html">Bloque 2 - Simulación, juegos, redes y transporte</a>
+                <a href="bloque3.html">Bloque 3 - Proceso de decisión y programación dinámica</a>
+                <a href="bloque4.html">Bloque 4 - Aplicaciones de la IO</a>
+                <a href="bloque5.html">Bloque 5 - Caso de estudio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero block-hero hero-b1">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="tag">BLOQUE 1 / 5</p>
+            <h1>Disciplinas de la Investigación de Operaciones</h1>
+            <p class="description">
+                Primer acercamiento a los métodos que permiten modelar problemas, optimizar recursos
+                y apoyar decisiones en situaciones reales.
+            </p>
+            <div class="hero-actions">
+                <a class="btn primary reveal-content-btn" href="#contenido">Ver contenido</a>
+                <a class="btn secondary" href="bloque2.html">Siguiente bloque</a>
+            </div>
+        </div>
+
+        <div class="block-visual-stack" aria-hidden="true">
+            <div class="visual-graphic optimization-graphic block-visual-primary"></div>
+            <div class="visual-graphic inventory-graphic block-visual-secondary"></div>
+        </div>
+    </header>
+
+    <main class="content" id="contenido">
+        <section class="intro-panel block-intro-copy">
+            <h2>Modelos para decidir mejor</h2>
+            <p>
+                La Investigación de Operaciones utiliza modelos para analizar recursos, restricciones
+                y alternativas de decisión en situaciones reales.
+            </p>
+        </section>
+
+        <section class="cards-row">
+            <article class="info-card">
+                <h3>Programación lineal</h3>
+                <p>Optimiza decisiones con variables y restricciones.</p>
+                <ul>
+                    <li>Función objetivo</li>
+                    <li>Variables de decisión</li>
+                    <li>Restricciones</li>
+                    <li>Maximizar o minimizar</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Programación lineal entera</h3>
+                <p>Trabaja con cantidades enteras y decisiones sí/no.</p>
+                <ul>
+                    <li>Valores enteros</li>
+                    <li>Variables binarias 0/1</li>
+                    <li>Decisiones exactas</li>
+                    <li>Seleccion de alternativas</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Teoría de inventarios</h3>
+                <p>Equilibra disponibilidad, costos y demanda.</p>
+                <ul>
+                    <li>Costo de ordenar</li>
+                    <li>Costo de mantenimiento</li>
+                    <li>Costo por escasez</li>
+                    <li>Inventario de seguridad</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>Teoría de colas</h3>
+                <p>Analiza esperas, servicio y capacidad.</p>
+                <ul>
+                    <li>Tasa de llegadas</li>
+                    <li>Patron de servicio</li>
+                    <li>Disciplina FIFO</li>
+                    <li>Capacidad del sistema</li>
+                </ul>
+            </article>
+        </section>
+
+        <nav class="block-next-nav" aria-label="Navegación al siguiente bloque">
+            <a href="bloque2.html" aria-label="Ir al bloque 2" title="Siguiente bloque">››</a>
+        </nav>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
